@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22b4668c6da106908a4ddaf479a5969d",
+    "revision": "15c4870ef05e657f8d28d7d797e8eca5",
     "url": "/nrl-draft/index.html"
   },
   {
-    "revision": "b565d62123cff54c7f93",
-    "url": "/nrl-draft/static/css/main.058db756.chunk.css"
+    "revision": "cd95c4a317bed8acd138",
+    "url": "/nrl-draft/static/css/main.5eee8edb.chunk.css"
   },
   {
     "revision": "43e4398e9b82f35ec235",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nrl-draft/static/js/2.b389b59e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b565d62123cff54c7f93",
-    "url": "/nrl-draft/static/js/main.8c3e66f7.chunk.js"
+    "revision": "cd95c4a317bed8acd138",
+    "url": "/nrl-draft/static/js/main.636b1963.chunk.js"
   },
   {
     "revision": "b5b9b906f2816745fd81",
