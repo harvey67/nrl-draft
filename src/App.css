@@ -1,38 +1,56 @@
-.App {
+body {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Soccer_Field_Transparant.svg/1200px-Soccer_Field_Transparant.svg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.App .choose {
+  float: right;
+}
+
+.App button {
+  /*
+  min-height: 40px;
+  padding-top: 80px;
+  min-width: 30vh;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0;
+  background-size: 100px 130px;
+  height: 134px;  
+  width: 104px;
+  */
+  /*background-image: url('');*/
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 188px 200px; /* width height 285 x 300 x 60%*/
+  height: 140px;
+  width: 200px;   
+  border-bottom: 40px solid white;
+  line-height: 230px;
+}
+
+.myTeam table tr {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choose {
+  position: fixed;
+  background-color: rgba(51, 170, 51, .7);
+  height: 300px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.team table {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
