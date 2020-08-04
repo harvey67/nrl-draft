@@ -1,14 +1,25 @@
 body {
   text-align: center;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Soccer_Field_Transparant.svg/1200px-Soccer_Field_Transparant.svg.png');
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: center center;
-  min-height: 100vh;
+  min-height: 100%;
+  height: 100%;
+  
+}
+
+.App {
+  height:100vh;
+}
+
+.App #scoreID {
+  text-align: left;
 }
 
 .App .choose {
@@ -29,12 +40,12 @@ body {
   */
   /*background-image: url('');*/
   background-repeat: no-repeat;
-  background-position: 0px 0px;
-  background-size: 188px 200px; /* width height 285 x 300 x 60%*/
-  height: 140px;
+  background-position: 40px 0px;
+  background-size: 118px 124px; /* width height 285 x 300 x 60%*/
+  height: 100px;
   width: 200px;   
-  border-bottom: 40px solid white;
-  line-height: 230px;
+  border-bottom: 20px solid white;
+  line-height: 175px;
 }
 
 .myTeam table tr {

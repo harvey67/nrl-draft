@@ -213,12 +213,15 @@ class App extends React.Component {
     ];
   }
 
+  componentDidMount() {
+    this.begin();
+  }
+
   getNum = (m) => {
     return Math.floor(Math.random() * m);
   }
 
   begin = () => {
-    document.getElementById("startBtnID").style.display = "none";
     this.reset();
     let x = document.getElementsByClassName("team")[0].style.display;
     if (x === "block") {
@@ -295,6 +298,9 @@ class App extends React.Component {
       } else if (p === 0) {
         heading = "Hooker";
         pos = this.hooker;
+      } else if (p === 13 || p === 14 || p === 15 || p === 16) {
+        heading = "Bench";
+        pos = 1;
       } else {
         alert("error code 69 - contact admin - pos is " + pos);
         pos = this.fullback;
@@ -306,8 +312,7 @@ class App extends React.Component {
         name = playerStr.split("(")[0].split(" ");
         let x = name[name.length-2] + ",%20" + name[0];
         let imgUrl = "https://www.nrlsupercoachstats.com/highcharts/PlayerPictures/2020/" + x + ".png";
-        document.getElementsByClassName("choosePlayer")[i].style="background-image: url(" + imgUrl + ")";
-        
+        document.getElementsByClassName("choosePlayer")[i].style="background-image: url(" + imgUrl + ")";        
       }
       document.getElementById("headingID").innerHTML = "Choose your " + heading;
     } else {
@@ -388,11 +393,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <br />
-        <button id="startBtnID" onClick={this.begin}>begin</button>        
         <div className="team" style={{display: "none"}}>
-          
-          <h1>testing...</h1>
           <h3 id="scoreID"> </h3>
           <div className="choose" style={{visibility: "hidden"}}>
           <h3 id="headingID"> </h3>
@@ -463,11 +464,18 @@ class App extends React.Component {
                   <td><button className="teamPlayer" onClick={()=>{this.selectPlayer(12)}}  id="fullbackID">select Fullback</button></td>
                   <td></td><td></td>
                 </tr>
+                <tr><td>------------------------------</td><td>------------------------------</td><td>------------------------------</td><td>------------------------------</td><td>------------------------------</td></tr>
+                <tr>
+                  <td><button className="teamPlayer" onClick={()=>{this.selectPlayer(13)}}  id="bench1ID">select Bench</button></td>
+                  <td><button className="teamPlayer" onClick={()=>{this.selectPlayer(14)}}  id="bench2ID">select Bench</button></td>
+                  <td><button className="teamPlayer" onClick={()=>{this.selectPlayer(15)}}  id="bench3ID">select Bench</button></td>
+                  <td><button className="teamPlayer" onClick={()=>{this.selectPlayer(16)}}  id="bench4ID">select Bench</button></td>
+                </tr>
               </tbody>
             </table>
           </div>          
         </div>     
-        <p style={{position: "absolute", bottom: "0"}}>NRL DRAFT v2.1</p>   
+        <p style={{position: "absolute", bottom: "0"}}>NRL DRAFT v3.1</p>   
       </div>
     );
   }  
