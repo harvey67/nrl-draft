@@ -475,7 +475,7 @@ class App extends React.Component {
             </table>
           </div>          
         </div>     
-        <p style={{position: "absolute", bottom: "0"}}>NRL DRAFT v3.1</p>   
+        <p style={{position: "absolute", bottom: "0"}}>NRL DRAFT v4.1</p>   
       </div>
     );
   }  
